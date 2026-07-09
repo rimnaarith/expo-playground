@@ -1,6 +1,7 @@
+import "@/styles/global.css";
+import { Link } from "expo-router";
 import { useState } from "react";
 import { Text, TextInput, View } from "react-native";
-import "@/src/styles/global.css";
 
 export default function App() {
   const [text, setText] = useState("");
@@ -22,6 +23,7 @@ export default function App() {
           onChangeText={setText}
         />
       </View>
+      <Link href="/(tabs)/home">Go to About screen</Link>
     </View>
   );
 }

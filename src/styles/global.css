@@ -3,3 +3,7 @@
 @import "tailwindcss/utilities.css";
 
 @import "nativewind/theme";
+
+@theme {
+  --color-border: lab(100% 0 0/0.15);
+}
