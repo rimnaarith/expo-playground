@@ -6,4 +6,13 @@
 
 @theme {
   --color-border: lab(100% 0 0/0.15);
+
+  --font-roboto-extralight: Roboto-ExtraLight;
+  --font-roboto-light: Roboto-Light;
+  --font-roboto-regular: Roboto-Regular;
+  --font-roboto-medium: Roboto-Medium;
+  --font-roboto-semibold: Roboto-SemiBold;
+  --font-roboto-bold: Roboto-Bold;
+  --font-roboto-extrabold: Roboto-ExtraBold;
+  --font-roboto-black: Roboto-Black;
 }
