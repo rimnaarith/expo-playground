@@ -1,7 +1,10 @@
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { ChatTab } from "./ChatTab";
 import { HomeTab } from "./HomeTab";
+import { NotificationTab } from "./NotificationTab";
+import { SearchTab } from "./SearchTab";
 
 export function AppTabBar(props: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
@@ -15,17 +18,17 @@ export function AppTabBar(props: BottomTabBarProps) {
         navigation={props.navigation}
         focused={props.state.index === 0}
       />
-      <HomeTab
+      <SearchTab
         route={props.state.routes[0]}
         navigation={props.navigation}
         focused={props.state.index === 2}
       />
-      <HomeTab
+      <NotificationTab
         route={props.state.routes[0]}
         navigation={props.navigation}
         focused={props.state.index === 2}
       />
-      <HomeTab
+      <ChatTab
         route={props.state.routes[0]}
         navigation={props.navigation}
         focused={props.state.index === 2}
