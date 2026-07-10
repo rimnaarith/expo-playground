@@ -2,7 +2,7 @@ import { Text, View } from "react-native";
 
 export function HomeScreen() {
   return (
-    <View className="flex-1 items-center justify-center bg-black">
+    <View className="flex-1 items-center justify-center bg-background">
       <Text className="text-7xl font-roboto-black text-blue-50">Welcome!</Text>
       <Text className="text-7xl font-roboto-extrabold text-blue-100">
         Welcome!

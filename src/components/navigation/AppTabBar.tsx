@@ -11,7 +11,7 @@ export function AppTabBar(props: BottomTabBarProps) {
   return (
     <View
       style={{ paddingBottom: insets.bottom }}
-      className="flex-row h-24 border-t border-t-border bg-black"
+      className="flex-row h-24 border-t border-t-border bg-background"
     >
       <HomeTab
         route={props.state.routes[0]}

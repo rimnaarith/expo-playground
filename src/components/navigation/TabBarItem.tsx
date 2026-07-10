@@ -1,4 +1,4 @@
-import { Pressable } from "react-native";
+import { Pressable, View } from "react-native";
 
 interface Props {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ interface Props {
 export function TabBarItem({ children, onPress }: Props) {
   return (
     <Pressable onPress={onPress} className="flex-1 items-center justify-center">
-      {children}
+      <View className="items-center justify-center">{children}</View>
     </Pressable>
   );
 }
