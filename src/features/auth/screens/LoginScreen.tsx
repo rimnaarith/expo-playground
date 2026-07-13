@@ -5,7 +5,7 @@ export function LoginScreen() {
   return (
     <View className="flex-1 bg-background">
       <SafeAreaView>
-        <Text className="text-white text-center font-roboto-bold text-2xl">
+        <Text className="text-white text-center font-poppins-medium text-2xl">
           Login
         </Text>
       </SafeAreaView>

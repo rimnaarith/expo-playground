@@ -8,14 +8,15 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    "Roboto-ExtraLight": require("../src/assets/fonts/Roboto-ExtraLight.ttf"),
-    "Roboto-Light": require("../src/assets/fonts/Roboto-Light.ttf"),
-    "Roboto-Regular": require("../src/assets/fonts/Roboto-Regular.ttf"),
-    "Roboto-Medium": require("../src/assets/fonts/Roboto-Medium.ttf"),
-    "Roboto-SemiBold": require("../src/assets/fonts/Roboto-SemiBold.ttf"),
-    "Roboto-Bold": require("../src/assets/fonts/Roboto-Bold.ttf"),
-    "Roboto-ExtraBold": require("../src/assets/fonts/Roboto-ExtraBold.ttf"),
-    "Roboto-Black": require("../src/assets/fonts/Roboto-Black.ttf"),
+    "Poppins-ExtraLight": require("../src/assets/fonts/Poppins-ExtraLight.ttf"),
+    "Poppins-Light": require("../src/assets/fonts/Poppins-Light.ttf"),
+    "Poppins-Regular": require("../src/assets/fonts/Poppins-Regular.ttf"),
+    "Poppins-Medium": require("../src/assets/fonts/Poppins-Medium.ttf"),
+    "Poppins-SemiBold": require("../src/assets/fonts/Poppins-SemiBold.ttf"),
+    "Poppins-Bold": require("../src/assets/fonts/Poppins-Bold.ttf"),
+    "Poppins-ExtraBold": require("../src/assets/fonts/Poppins-ExtraBold.ttf"),
+    "Poppins-Black": require("../src/assets/fonts/Poppins-Black.ttf"),
+    "Poppins-Thin": require("../src/assets/fonts/Poppins-Thin.ttf"),
   });
 
   useEffect(() => {

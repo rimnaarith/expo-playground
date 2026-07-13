@@ -7,7 +7,7 @@ export function ChatTab({ route, navigation, focused }: any) {
     <TabBarItem onPress={() => navigation.navigate(route.name)}>
       <MessageCircle color={focused ? "white" : "gray"} />
       <View className="absolute flex items-center justify-center -right-1.5 -top-1.5 bg-blue-400 rounded-full h-5 min-w-5">
-        <Text className="text-white font-roboto-medium text-sm">1</Text>
+        <Text className="text-white font-poppins-medium text-sm">1</Text>
       </View>
     </TabBarItem>
   );
