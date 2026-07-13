@@ -8,30 +8,37 @@ import { SearchTab } from "./SearchTab";
 
 export function AppTabBar(props: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
+  const getRoute = (name: string) => {
+    return props.state.routes.find((r) => r.name === name)!;
+  };
+
+  const isFocused = (name: string) => {
+    return props.state.routes[props.state.index].name === name;
+  };
   return (
     <View
       style={{ paddingBottom: insets.bottom }}
       className="flex-row h-24 border-t border-t-border bg-background"
     >
       <HomeTab
-        route={props.state.routes[0]}
+        route={getRoute("home")}
         navigation={props.navigation}
-        focused={props.state.index === 0}
+        focused={isFocused("home")}
       />
       <SearchTab
-        route={props.state.routes[0]}
+        route={getRoute("search")}
         navigation={props.navigation}
-        focused={props.state.index === 2}
+        focused={isFocused("search")}
       />
       <NotificationTab
-        route={props.state.routes[0]}
+        route={getRoute("notifications")}
         navigation={props.navigation}
-        focused={props.state.index === 2}
+        focused={isFocused("notifications")}
       />
       <ChatTab
-        route={props.state.routes[0]}
+        route={getRoute("chat")}
         navigation={props.navigation}
-        focused={props.state.index === 2}
+        focused={isFocused("chat")}
       />
     </View>
   );

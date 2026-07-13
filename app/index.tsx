@@ -23,7 +23,9 @@ export default function App() {
           onChangeText={setText}
         />
       </View>
-      <Link href="/(tabs)/home">Go to About screen</Link>
+      <Link href="/(tabs)/home" replace>
+        Go to About screen
+      </Link>
     </View>
   );
 }
