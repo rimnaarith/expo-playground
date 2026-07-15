@@ -32,7 +32,7 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>
-      <StatusBar animated style="auto" />
+      <StatusBar animated style="inverted" />
       <Stack screenOptions={{ headerShown: false }} />
     </SafeAreaProvider>
   );
