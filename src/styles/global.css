@@ -5,7 +5,8 @@
 @import "nativewind/theme";
 
 @theme {
-  --color-background: #000;
+  --color-background: #ffffff;
+  --color-foreground: #000;
   --color-border: lab(100% 0 0/0.15);
 
   --font-poppins-extralight: Poppins-ExtraLight;

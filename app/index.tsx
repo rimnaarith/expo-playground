@@ -21,13 +21,13 @@ export default function App() {
           onChangeText={setText}
         />
       </View>
-      <Link href="/(tabs)/home" className="text-white">
+      <Link href="/(tabs)/home" className="text-foreground">
         Go to Home screen
       </Link>
-      <Link href="/(auth)/signup" className="text-white">
+      <Link href="/(auth)/signup" className="text-foreground">
         Go to Signup screen
       </Link>
-      <Link href="/(auth)/login" className="text-white">
+      <Link href="/(auth)/login" className="text-foreground">
         Go to Login screen
       </Link>
     </View>

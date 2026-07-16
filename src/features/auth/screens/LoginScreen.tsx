@@ -7,11 +7,12 @@ export function LoginScreen() {
   return (
     <View className="flex-1 bg-background px-4">
       <SafeAreaView>
-        <Text className="text-white text-center font-poppins-medium text-2xl">
+        <Text className="text-foreground text-center font-poppins-medium text-2xl">
           Welcome back!
         </Text>
-        <Input />
-        <Button title="Submit" />
+        <Input placeholder="you@example.com" />
+        <Input placeholder="password" />
+        <Button title="Login" />
       </SafeAreaView>
     </View>
   );
