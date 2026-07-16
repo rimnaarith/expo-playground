@@ -7,7 +7,9 @@
 @theme {
   --color-background: #ffffff;
   --color-foreground: #000;
-  --color-border: lab(100% 0 0/0.15);
+  --color-border: lab(90.952% 0 -0.0000119209);
+  --color-primary: #2b8fff;
+  --color-primary-foreground: #ffffff;
 
   --font-poppins-extralight: Poppins-ExtraLight;
   --font-poppins-light: Poppins-Light;

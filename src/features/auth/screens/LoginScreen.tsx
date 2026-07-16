@@ -1,19 +1,18 @@
 import { Input } from "@/components/form/Input";
 import { Button } from "@/components/ui/Button";
-import { Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-
+import { styled } from "nativewind";
+import { Text } from "react-native";
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+const SafeAreaView = styled(RNSafeAreaView);
 export function LoginScreen() {
   return (
-    <View className="flex-1 bg-background px-4">
-      <SafeAreaView>
-        <Text className="text-foreground text-center font-poppins-medium text-2xl">
-          Welcome back!
-        </Text>
-        <Input placeholder="you@example.com" />
-        <Input placeholder="password" />
-        <Button title="Login" />
-      </SafeAreaView>
-    </View>
+    <SafeAreaView className="flex-1 flex gap-3 bg-background pl-4 pr-4">
+      <Text className="text-foreground text-center font-poppins-medium text-2xl">
+        Welcome back!
+      </Text>
+      <Input placeholder="you@example.com" keyboardType="email-address" />
+      <Input placeholder="password" secureTextEntry />
+      <Button title="Login" />
+    </SafeAreaView>
   );
 }
